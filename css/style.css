@@ -27,7 +27,7 @@
 }
 
 body {
-  min-width: 1440px;
+  min-width: 1200px;
   margin: 0;
   padding: 0;
   font-family: "Roboto", arial, sans-serif;
@@ -66,58 +66,50 @@ img {
   color: var(--basic-white);
   font-weight: 500;
   line-height: 18px;
+  border-radius: 3px;
   text-align: center;
   text-transform: uppercase;
 }
 
 .red {
   background-color: var(--red-light);
-  border-radius: 3px;
 }
 
 .red:hover {
   background-color: var(--red-medium);
-  border-radius: 3px;
 }
 
 .red:focus {
   background-color: var(--red-dark);
-  border-radius: 3px;
   box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
   opacity: 0.3;
 }
 
 .green {
   background-color: var(--green-light);
-  border-radius: 3px;
 }
 
 .green:hover {
   background-color: var(--green-medium);
-  border-radius: 3px;
 }
 
 .green:focus {
   background-color: var(--green-dark);
-  border-radius: 3px;
   box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
   opacity: 0.3;
 }
 
 .yellow {
   background-color: var(--yellow-light);
-  border-radius: 3px;
 }
 
 .yellow:hover {
   background-color: var(--yellow-medium);
-  border-radius: 3px;
 }
 
 .yellow:focus {
   background-color: var(--yellow-dark);
   box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
-  border-radius: 3px;
   opacity: 0.3;
 }
 
@@ -264,7 +256,6 @@ img {
   background: linear-gradient(0deg, #D7373B, #D7373B), #FFFFFF;
   box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
 }
-
 
 .footer-title {
   font-style: normal;

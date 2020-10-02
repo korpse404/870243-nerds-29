@@ -12,6 +12,7 @@
   --gray-social: #E1E1E1;
   --gray-background: #EEEEEE;
   --gray-adds: #444444;
+  --gray-border: #DBDBDB;
 
   --red-light: #FB565A;
   --red-medium: #E74246;
@@ -329,6 +330,16 @@ img {
   font-weight: 500;
   font-size: 16px;
   line-height: 18px;
+}
+
+.pagination-item a, .pagination-next a{
+  background-color: var(--gray-background);
+  border-radius: 3px;
+}
+
+.pagination-list .current a{
+  background-color: rgba(0, 0, 0, 0.0001);
+  border: 3px solid var(--gray-border);
 }
 
 .pagination-next {

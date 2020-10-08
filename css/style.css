@@ -299,6 +299,10 @@ img {
   text-transform: uppercase;
 }
 
+.product-card-popup {
+  background-color: var(--gray-background);
+}
+
 /* Horizontal filter */
 
 .filter-list {

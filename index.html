@@ -13,90 +13,109 @@
 
     <header class="main-header">
       <nav class="main-header-nav">
-        <a class="main-logo">
-          <img src="img\main-logo.svg" alt="Логотип Nerds" width="160" height="65">
-        </a>
-        <ul class="site-nav">
-          <li class="site-nav-item"><a href="blank.html">Студия</a></li>
-          <li class="site-nav-item"><a href="blank.html">Клиенты</a></li>
-          <li class="site-nav-item"><a href="catalog.html">Магазин</a></li>
-          <li class="site-nav-item"><a href="blank.html">Контакты</a></li>
-        </ul>
-        <a class="cart-link" href="blank.html">Корзина</a>
+        <div class="header-wrap">
+          <div class="nav-wrap">
+            <a class="main-logo">
+              <img src="img\main-logo.svg" alt="Логотип Nerds" width="160" height="65">
+            </a>
+            <ul class="site-nav">
+              <li class="site-nav-item"><a href="blank.html">Студия</a></li>
+              <li class="site-nav-item"><a href="blank.html">Клиенты</a></li>
+              <li class="site-nav-item"><a href="catalog.html">Магазин</a></li>
+              <li class="site-nav-item"><a href="blank.html">Контакты</a></li>
+            </ul>
+            <div class="cart-nav">
+              <a class="cart-link" href="blank.html">Корзина</a>
+            </div>
+          </div>
+        </div>
       </nav>
     </header>
 
-    <main class="wrap">
-      <h1 class="visually-hidden">Дизайн-студия "Nerds"</h1>
-      <section class="slider">
-        <h2 class="visually-hidden">Слайд первый</h2>
-        <p class="slider-title">Долго, дорого, скрупулезно.</p>
-        <p class="slider-descr">Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
-        <a class="slide-1-image" href="blank.html"><img src="img\nerds-index-slide1.png" alt="Первый слайд"  width="760" height="431"></a>
-        <a class="button red" href="blank.html">Узнать больше</a>
-      </section>
+    <main class="container">
+      <div class="slider-backgr">
+        <h1 class="visually-hidden">Дизайн-студия "Nerds"</h1>
+        <!-- <div class="container"> -->
+          <section class="slider">
+            <div class="slider-wrap">
+              <h2 class="visually-hidden">Слайд первый</h2>
+              <p class="slider-title">Долго, дорого, скрупулезно.</p>
+              <p class="slider-descr">Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
+              <a class="slide-1-image" href="blank.html"><img src="img\nerds-index-slide1.png" alt="Первый слайд"  width="760" height="431"></a>
+              <a class="button red" href="blank.html">Узнать больше</a>
+            </div>
+          </section>
+        <!-- </div> -->
 
-      <section class="slider">
-        <h2 class="visually-hidden">Слайд второй</h2>
-        <p class="slider-title">Любим математику, как никто другой</p>
-        <p class="slider-descr">Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
-        <a class="slide-2-image" href="blank.html"><img src="img\nerds-index-slide2.png" alt="Второй слайд" width="760" height="431"></a>
-        <a class="button more red" href="blank.html">Узнать больше</a>
-      </section>
+        <section class="slider visually-hidden">
+          <h2 class="visually-hidden">Слайд второй</h2>
+          <p class="slider-title">Любим математику, как никто другой</p>
+          <p class="slider-descr">Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
+          <a class="slide-2-image" href="blank.html"><img src="img\nerds-index-slide2.png" alt="Второй слайд" width="760" height="431"></a>
+          <a class="button more red" href="blank.html">Узнать больше</a>
+        </section>
 
-      <section class="slider">
-        <h2 class="visually-hidden">Слайд третий</h2>
-        <p class="slider-title">Только ночь,только хардкор</p>
-        <p class="slider-descr">Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
-        <a  class="slide-3-image" href="blank.html"><img src="img\nerds-index-slide3.png" alt="Третий слайд" width="760" height="431"></a>
-        <a class="button more red" href="blank.html">Узнать больше</a>
-      </section>
+        <section class="slider visually-hidden">
+          <h2 class="visually-hidden">Слайд третий</h2>
+          <p class="slider-title">Только ночь,только хардкор</p>
+          <p class="slider-descr">Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
+          <a  class="slide-3-image" href="blank.html"><img src="img\nerds-index-slide3.png" alt="Третий слайд" width="760" height="431"></a>
+          <a class="button more red" href="blank.html">Узнать больше</a>
+        </section>
 
-      <section>
-        <!-- тут будет переключатель слайдов -->
-      </section>
+        <section>
+          <!-- тут будет переключатель слайдов -->
+        </section>
+      </div>
 
       <section class="services">
         <h2 class="visually-hidden">Услуги</h2>
-        <ul class="services-list">
-          <li class="services-item">
-            <h3 class="services-title">Веб-сайты</h3>
-            <img class="services-img" src="img\services-img-red.svg" alt="Раздел 'Вебсайты'" width="300" height="146">
-            <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
-            <a class="button red" href="blank.html">Заказать</a>
-          </li>
-          <li class="services-item">
-            <h3 class="services-title">Приложения</h3>
-            <img class="services-img" src="img\services-img-green.svg" alt="Раздел 'Приложения'" width="300" height="146">
-            <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
-            <a class="button green" href="blank.html">Заказать</a>
-          </li>
-          <li class="services-item">
-            <h3 class="services-title">Презентации</h3>
-            <img class="services-img" src="img\services-img-yellow.svg" alt="Раздел 'Презентации'" width="300" height="146">
-            <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
-            <a class="button yellow" href="blank.html">Заказать</a>
-          </li>
-        </ul>
+        <!-- <div class="container"> -->
+          <ul class="services-list">
+            <li class="services-item">
+              <h3 class="services-title">Веб-сайты</h3>
+              <img class="services-img" src="img\services-img-red.svg" alt="Раздел 'Вебсайты'" width="300" height="146">
+              <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
+              <a class="button red" href="blank.html">Заказать</a>
+            </li>
+            <li class="services-item">
+              <h3 class="services-title">Приложения</h3>
+              <img class="services-img" src="img\services-img-green.svg" alt="Раздел 'Приложения'" width="300" height="146">
+              <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
+              <a class="button green" href="blank.html">Заказать</a>
+            </li>
+            <li class="services-item">
+              <h3 class="services-title">Презентации</h3>
+              <img class="services-img" src="img\services-img-yellow.svg" alt="Раздел 'Презентации'" width="300" height="146">
+              <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
+              <a class="button yellow" href="blank.html">Заказать</a>
+            </li>
+          </ul>
+        <!-- </div> -->
       </section>
 
       <section class="features">
         <h2 class="visually-hidden">Преимущества компании</h2>
-        <p class="features-title">Мы — маленькая, но гордая дизайн-студия из Краснодара.</p>
-        <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
-        <h3 class="features-list-title">Выполняем заказы на разработку:</h3>
-        <ul class="features-list">
-          <li class="features-item">Веб-сайтов любой сложности</li>
-          <li class="features-item">Мобильных приложений для iOS и Android</li>
-          <li class="features-item">Слайдшоу и видео для корпоративных презентаций</li>
-        </ul>
-        <img class="features-logo" src="img\features-logo.svg" alt="Цветной логотип Nerds" width="360" height="280">
-        <p class="special-title">C 2004 года Любим точность во всем:</p>
-        <ul class="special-list">
-          <li class="special-item">146<span class="percent">%</span><p class="special-text"> Уровень самоотдачи</p></li>
-          <li class="special-item">100<span class="percent">%</span><p class="special-text"> Соблюдение сроков</p></li>
-          <li class="special-item">50<span class="percent">%</span><p class="special-text"> Минимальная предоплата</p></li>
-        </ul>
+        <div class="features-wrap">
+        <!-- <div class="container"> -->
+          <!-- <div class="features-wrap"> -->
+          <p class="features-title">Мы — маленькая, но гордая дизайн-студия из Краснодара.</p>
+          <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
+          <h3 class="features-list-title">Выполняем заказы на разработку:</h3>
+          <ul class="features-list">
+            <li class="features-item">Веб-сайтов любой сложности</li>
+            <li class="features-item">Мобильных приложений для iOS и Android</li>
+            <li class="features-item">Слайдшоу и видео для корпоративных презентаций</li>
+          </ul>
+          <img class="features-logo" src="img\features-logo.svg" alt="Цветной логотип Nerds" width="360" height="280">
+          <p class="special-title">C 2004 года Любим точность во всем:</p>
+          <ul class="special-list">
+            <li class="special-item">146<span class="percent">%</span><p class="special-text"> Уровень самоотдачи</p></li>
+            <li class="special-item">100<span class="percent">%</span><p class="special-text"> Соблюдение сроков</p></li>
+            <li class="special-item">50<span class="percent">%</span><p class="special-text"> Минимальная предоплата</p></li>
+          </ul>
+          </div>
+        <!-- </div> -->
       </section>
 
       <article class="partners">

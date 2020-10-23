@@ -135,25 +135,19 @@ img {
 
 /* Header */
 
-.main-header-nav {
-  display: grid;
-  line-height: 30px;
-  font-weight: 500;
-  background-color: transparent;
-  text-transform: uppercase;
-}
-
-.header-backgr {
+.main-header {
   background-color: var(--gray-background);
 }
 
-.nav-wrap {
+.main-header-nav {
   display: grid;
   grid-template-columns: min-content 1fr min-content;
   width: 1157px;
   margin: 0 auto;
-  /* outline: 5px solid lightgreen;
-  outline-offset: -5px; */
+  line-height: 30px;
+  font-weight: 500;
+  background-color: transparent;
+  text-transform: uppercase;
 }
 
 .main-logo {

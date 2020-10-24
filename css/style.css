@@ -405,6 +405,10 @@ img {
 
 /* ---------- Catalog ---------- */
 
+.catalog-backgr {
+  background-color: var(--gray-background);
+}
+
 .catalog-wrap {
   display: grid;
   grid-template-columns: min-content 1fr;
@@ -416,9 +420,11 @@ img {
 }
 
 .catalog-main-title {
+  margin: 0px;
   font-weight: 500;
   font-size: 55px;
   line-height: 55px;
+
 }
 
 .catalog-title {
@@ -462,6 +468,8 @@ img {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-row: 1fr 1fr 1fr;
+  grid-column-gap: 40px;
+  grid-row-gap: 30px;
 }
 
 .site-catalog p{

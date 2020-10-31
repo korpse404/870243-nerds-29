@@ -22,9 +22,7 @@
           <li class="site-nav-item"><a href="catalog.html">Магазин</a></li>
           <li class="site-nav-item"><a href="blank.html">Контакты</a></li>
         </ul>
-        <div class="cart-nav">
-          <a class="cart-link" href="blank.html">Корзина</a>
-        </div>
+        <a class="cart-link" href="blank.html">Корзина</a>
       </nav>
     </header>
 
@@ -69,20 +67,20 @@
         <div class="container">
           <ul class="services-list">
             <li class="services-item">
-              <h3 class="services-title">Веб-сайты</h3>
               <img class="services-img" src="img\services-img-red.svg" alt="Раздел 'Вебсайты'" width="300" height="146">
+              <h3 class="services-title">Веб-сайты</h3>
               <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
               <a class="button red" href="blank.html">Заказать</a>
             </li>
             <li class="services-item">
-              <h3 class="services-title">Приложения</h3>
               <img class="services-img" src="img\services-img-green.svg" alt="Раздел 'Приложения'" width="300" height="146">
+              <h3 class="services-title">Приложения</h3>
               <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
               <a class="button green" href="blank.html">Заказать</a>
             </li>
             <li class="services-item">
-              <h3 class="services-title">Презентации</h3>
               <img class="services-img" src="img\services-img-yellow.svg" alt="Раздел 'Презентации'" width="300" height="146">
+              <h3 class="services-title">Презентации</h3>
               <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
               <a class="button yellow" href="blank.html">Заказать</a>
             </li>
@@ -94,21 +92,25 @@
         <h2 class="visually-hidden">Преимущества компании</h2>
         <div class="container">
           <div class="features-wrap">
-            <p class="features-title">Мы — маленькая, но гордая дизайн-студия из Краснодара.</p>
-            <p class="features-list-text">Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
-            <h3 class="features-list-title">Выполняем заказы на разработку:</h3>
-            <ul class="features-list">
-              <li class="features-item">Веб-сайтов любой сложности</li>
-              <li class="features-item">Мобильных приложений для iOS и Android</li>
-              <li class="features-item">Слайдшоу и видео для корпоративных презентаций</li>
-            </ul>
-            <img class="features-logo" src="img\features-logo.svg" alt="Цветной логотип Nerds" width="360" height="280">
-            <p class="special-title">C 2004 года Любим точность во всем:</p>
-            <ul class="special-list">
-              <li class="special-item">146<span class="percent">%</span><p class="special-text"> Уровень самоотдачи</p></li>
-              <li class="special-item">100<span class="percent">%</span><p class="special-text"> Соблюдение сроков</p></li>
-              <li class="special-item">50<span class="percent">%</span><p class="special-text"> Минимальная предоплата</p></li>
-            </ul>
+            <div class="features-col1">
+              <p class="features-title">Мы — маленькая, но гордая дизайн-студия из Краснодара.</p>
+              <p class="features-list-text">Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
+              <h3 class="features-list-title">Выполняем заказы на разработку:</h3>
+              <ul class="features-list">
+                <li class="features-item">Веб-сайтов любой сложности</li>
+                <li class="features-item">Мобильных приложений для iOS и Android</li>
+                <li class="features-item">Слайдшоу и видео для корпоративных презентаций</li>
+              </ul>
+            </div>
+            <div class="features-col2">
+              <img class="features-logo" src="img\features-logo.svg" alt="Цветной логотип Nerds" width="360" height="280">
+              <p class="special-title">C 2004 года Любим точность во всем:</p>
+              <ul class="special-list">
+                <li class="special-item">146<span class="percent">%</span><p class="special-text"> Уровень самоотдачи</p></li>
+                <li class="special-item">100<span class="percent">%</span><p class="special-text"> Соблюдение сроков</p></li>
+                <li class="special-item">50<span class="percent">%</span><p class="special-text"> Минимальная предоплата</p></li>
+              </ul>
+            </div>
           </div>
         </div>
       </section>
@@ -130,9 +132,9 @@
 
         <section class="footer-contacts">
           <h2 class="visually-hidden">Как нас найти</h2>
-          <div class="container">
+          <!-- <div class="container"> -->
             <img class="map" src="img\footer-map.png" alt="Карта, как нас найти" width="1440" height="416">
-          </div>
+          <!-- </div> -->
           <img class="map-marker" src="img\footer-map-marker.svg" alt="Маркер - местонахождение на карте" width="231" height="190">
           <p>NЁRDS DESIGN STUDIO</p>
           <address class="footer-adress">
@@ -151,8 +153,10 @@
                 <li class="social-item"><a href="#">Фейсбук</a></li>
                 <li class="social-item"><a href="#">Инстаграм</a></li>
               </ul>
-              <p class="footer-title">Давайте дружить, это выгодно!</p>
-              <p class="footer-text">Скидка 10% для друзей из социальных сетей.</p>
+              <div class="footer-col2">
+                <p class="footer-title">Давайте дружить, это выгодно!</p>
+                <p class="footer-text">Скидка 10% для друзей из социальных сетей.</p>
+              </div>
             </div>
           </section>
         </div>

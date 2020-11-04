@@ -22,7 +22,9 @@
           <li class="site-nav-item"><a href="catalog.html">Магазин</a></li>
           <li class="site-nav-item"><a href="blank.html">Контакты</a></li>
         </ul>
-        <a class="cart-link" href="blank.html">Корзина</a>
+        <div class="user-nav">
+          <a class="cart-link" href="blank.html">Корзина</a>
+        </div>
       </nav>
     </header>
 
@@ -30,35 +32,41 @@
       <div class="slider-backgr">
         <h1 class="visually-hidden">Дизайн-студия "Nerds"</h1>
         <div class="container">
-          <section class="slider">
-            <div class="slider-wrap">
+          <section class="slide slide-current">
+            <div class="slider-wrap1">
               <h2 class="visually-hidden">Слайд первый</h2>
               <p class="slider-title">Долго, дорого, скрупулезно.</p>
               <p class="slider-descr">Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
-              <!-- <a class="slide-1-image" href="blank.html"><img src="img\nerds-index-slide1.png" alt="Первый слайд"  width="760" height="431"></a> - Не уверен в разметке, пока не убираю -->
               <a class="button red" href="blank.html">Узнать больше</a>
             </div>
           </section>
         </div>
 
-        <section class="slider visually-hidden">
-          <h2 class="visually-hidden">Слайд второй</h2>
-          <p class="slider-title">Любим математику, как никто другой</p>
-          <p class="slider-descr">Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
-          <!-- <a class="slide-2-image" href="blank.html"><img src="img\nerds-index-slide2.png" alt="Второй слайд" width="760" height="431"></a> - Не уверен в разметке, пока не убираю -->
-          <a class="button more red" href="blank.html">Узнать больше</a>
-        </section>
+        <div class="container">
+          <section class="slide">
+            <div class="slider-wrap2">
+              <h2 class="visually-hidden">Слайд второй</h2>
+              <p class="slider-title">Любим математику, как никто другой</p>
+              <p class="slider-descr">Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
+              <a class="button red" href="blank.html">Узнать больше</a>
+            </div>
+          </section>
+        </div>
 
-        <section class="slider visually-hidden">
-          <h2 class="visually-hidden">Слайд третий</h2>
-          <p class="slider-title">Только ночь,только хардкор</p>
-          <p class="slider-descr">Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
-          <!-- <a  class="slide-3-image" href="blank.html"><img src="img\nerds-index-slide3.png" alt="Третий слайд" width="760" height="431"></a>  - Не уверен в разметке, пока не убираю -->
-          <a class="button more red" href="blank.html">Узнать больше</a>
-        </section>
-
-        <section>
-          <!-- тут будет переключатель слайдов -->
+        <div class="container">
+          <section class="slide">
+            <div class="slider-wrap3">
+              <h2 class="visually-hidden">Слайд третий</h2>
+              <p class="slider-title">Только ночь,только хардкор</p>
+              <p class="slider-descr">Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
+              <a class="button red" href="blank.html">Узнать больше</a>
+            </div>
+          </section>
+        </div>
+        <section class="slide-control">
+          <button class="current" type="button" aria-label="Первый слайд"></button>
+          <button type="button" aria-label="Второй слайд"></button>
+          <button type="button" aria-label="Третий слайд"></button>
         </section>
       </div>
 
@@ -75,13 +83,13 @@
             <li class="services-item">
               <img class="services-img" src="img\services-img-green.svg" alt="Раздел 'Приложения'" width="300" height="146">
               <h3 class="services-title">Приложения</h3>
-              <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
+              <p>Покорите топ-10 приложений в AppStore и Google Play</p>
               <a class="button green" href="blank.html">Заказать</a>
             </li>
             <li class="services-item">
               <img class="services-img" src="img\services-img-yellow.svg" alt="Раздел 'Презентации'" width="300" height="146">
               <h3 class="services-title">Презентации</h3>
-              <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
+              <p>Вы даже не подозреваете, насколько вы изумительны!</p>
               <a class="button yellow" href="blank.html">Заказать</a>
             </li>
           </ul>
@@ -92,7 +100,7 @@
         <h2 class="visually-hidden">Преимущества компании</h2>
         <div class="container">
           <div class="features-wrap">
-            <div class="features-col1">
+            <div class="features-left">
               <p class="features-title">Мы — маленькая, но гордая дизайн-студия из Краснодара.</p>
               <p class="features-list-text">Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
               <h3 class="features-list-title">Выполняем заказы на разработку:</h3>
@@ -102,7 +110,7 @@
                 <li class="features-item">Слайдшоу и видео для корпоративных презентаций</li>
               </ul>
             </div>
-            <div class="features-col2">
+            <div class="features-right">
               <img class="features-logo" src="img\features-logo.svg" alt="Цветной логотип Nerds" width="360" height="280">
               <p class="special-title">C 2004 года Любим точность во всем:</p>
               <ul class="special-list">
@@ -119,10 +127,10 @@
         <h2 class="visually-hidden">Партнеры</h2>
         <div class="container">
             <ul class="partner-list">
-              <li class="partner-item"><a href="blank.html"><img src="img\partners-html-logo.svg" alt="Логотип HTMLacademy" width="200" height="68"></a></li>
-              <li class="partner-item"><a href="blank.html"><img src="img\partners-borodinski-logo.svg" alt="Логотип Borodinsky" width="209" height="90"></a></li>
-              <li class="partner-item"><a href="blank.html"><img src="img\partners-pink-logo.svg" alt="Логотип Pink" width="185" height="52"></a></li>
-              <li class="partner-item"><a href="blank.html"><img src="img\partners-mishka-logo.svg" alt="Логотип Mishka" width="173" height="84"></a></li>
+              <li class="partner-item htmlacademy"><a href="blank.html"><img src="img\partners-html-logo.svg" alt="Логотип HTMLacademy" width="200" height="68"></a></li>
+              <li class="partner-item borodinsky"><a href="blank.html"><img src="img\partners-borodinski-logo.svg" alt="Логотип Borodinsky" width="209" height="90"></a></li>
+              <li class="partner-item pink"><a href="blank.html"><img src="img\partners-pink-logo.svg" alt="Логотип Pink" width="185" height="52"></a></li>
+              <li class="partner-item mishka"><a href="blank.html"><img src="img\partners-mishka-logo.svg" alt="Логотип Mishka" width="173" height="84"></a></li>
             </ul>
         </div>
       </article>
@@ -132,16 +140,16 @@
 
         <section class="footer-contacts">
           <h2 class="visually-hidden">Как нас найти</h2>
-          <!-- <div class="container"> -->
-            <img class="map" src="img\footer-map.png" alt="Карта, как нас найти" width="1440" height="416">
-          <!-- </div> -->
+          <img class="map" src="img\footer-map.png" alt="Карта, как нас найти" width="1440" height="416">
           <img class="map-marker" src="img\footer-map-marker.svg" alt="Маркер - местонахождение на карте" width="231" height="190">
-          <p>NЁRDS DESIGN STUDIO</p>
-          <address class="footer-adress">
-            191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
-          </address>
-          <a class="footer-phone" href="tel:+78122757575">тел. +7 (812) 275-75-75</a>
-          <a class="button red" href="blank.html">Напишите нам</a>
+          <div class="contacts-block">
+            <p>NЁRDS DESIGN STUDIO</p>
+            <address class="footer-adress">
+              191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
+            </address>
+            <a class="footer-phone" href="tel:+78122757575">тел. +7 (812) 275-75-75</a>
+            <a class="button red" href="blank.html">Напишите нам</a>
+          </div>
         </section>
 
         <div class="container">

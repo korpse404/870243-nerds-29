@@ -3,7 +3,7 @@
 
   <head>
     <meta charset="utf-8">
-    <title>Пуская</title>
+    <title>Пустая страница</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
@@ -22,40 +22,51 @@
           <li class="site-nav-item"><a href="catalog.html">Магазин</a></li>
           <li class="site-nav-item"><a href="blank.html">Контакты</a></li>
         </ul>
-        <a class="cart-link" href="blank.html">Корзина</a>
+        <div class="user-nav">
+          <a class="cart-link" href="blank.html">Корзина</a>
+        </div>
       </nav>
     </header>
 
     <main>
-
-      <h1>Дизайн-студия "Nerds"</h1>
-
+      <div class="container">
+        <h1>Дизайн-студия "Nerds"</h1>
+      </div>
     </main>
 
     <footer class="page-footer main-footer">
-      <section class="footer-contacts">
-        <h2 class="visually-hidden">Как нас найти</h2>
-        <img class="map" src="img\footer-map.png" alt="Карта, как нас найти" width="1440" height="416">
-        <img class="map-marker" src="img\footer-map-marker.svg" alt="Маркер - местонахождение на карте" width="231" height="190">
-        <p>NЁRDS DESIGN STUDIO</p>
-        <address class="footer-adress">
-          191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
-        </address>
-        <a class="footer-phone" href="tel:+78122757575">тел. +7 (812) 275-75-75</a>
-        <a class="button red" href="blank.html">Напишите нам</a>
-      </section>
+        <section class="footer-contacts">
+          <h2 class="visually-hidden">Как нас найти</h2>
+          <img class="map" src="img\footer-map.png" alt="Карта, как нас найти" width="1440" height="416">
+          <div class="container">
+          <img class="map-marker" src="img\footer-map-marker.svg" alt="Маркер - местонахождение на карте" width="231" height="190">
+          </div>
+          <div class="container">
+            <div class="contacts-block">
+              <p>NЁRDS DESIGN STUDIO</p>
+              <address class="footer-adress">
+                191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
+              </address>
+              <a class="footer-phone" href="tel:+78122757575">тел. +7 (812) 275-75-75</a>
+              <a class="button red" href="blank.html">Напишите нам</a>
+            </div>
+          </div>
+        </section>
 
-      <section class="social">
-        <h2 class="visually-hidden">Мы в социальных сетях</h2>
-        <ul class="social-list">
-          <li class="social-item"><a href="#">Вконтакте</a></li>
-          <li class="social-item"><a href="#">Фейсбук</a></li>
-          <li class="social-item"><a href="#">Инстаграм</a></li>
-        </ul>
-      </section>
-
-      <p class="footer-title">Давайте дружить, это выгодно!</p>
-      <p class="footer-text">Скидка 10% для друзей из социальных сетей.</p>
+          <section class="social">
+            <h2 class="visually-hidden">Мы в социальных сетях</h2>
+              <div class="social-wrap">
+                <ul class="social-list">
+                  <li class="social-item vk"><a class="button" href="#" ></a></li>
+                  <li class="social-item fb"><a class="button" href="#" ></a></li>
+                  <li class="social-item inst"><a class="button" href="#" ></a></li>
+                </ul>
+                <div class="footer-right">
+                  <p class="footer-title">Давайте дружить, это выгодно!</p>
+                  <p class="footer-text">Скидка 10% для друзей из социальных сетей.</p>
+                </div>
+              </div>
+          </section>
     </footer>
 
   </body>

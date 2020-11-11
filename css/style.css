@@ -1079,7 +1079,7 @@ img {
   opacity: 0.3;
 }
 
-.content-item-checkbox:checked + label::after {
+.content-item-checkbox:checked + label::before { /*::after*/
   content: "";
   position: absolute;
   width: 24px;
@@ -1087,15 +1087,15 @@ img {
   background-image: url("../img/icons/checkbox-on.svg");
   background-repeat: no-repeat;
   opacity: 0.4;
-  right: 373px;
+  right: 372px;
   bottom: -2px;
 }
 
-.content-item-checkbox:checked + label:hover::after {
+.content-item-checkbox:checked + label:hover::before {
   opacity: 1;
 }
 
-.content-item-checkbox:checked:disabled + label::after {
+.content-item-checkbox:checked:disabled + label::before {
   opacity: 0.3;
 }
 
@@ -1336,7 +1336,7 @@ img {
 /* ---------------Modals-------------- */
 
 .modal {
-  /* display: none; */
+  display: none;
   position: fixed;
   top: 0;
   right: 0;
@@ -1351,7 +1351,7 @@ img {
   padding: 30px 100px;
   max-height: 590px;
   background-color: var(--basic-white);
-  bottom: calc(50% - 180px);
+  bottom: calc(50% - 170px);
   left: calc(50% - 480px);
   box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.4);
 }
@@ -1441,6 +1441,15 @@ img {
   bottom: 461px;
   right: -8px;
   cursor: pointer;
+  opacity: 0.3;
+}
+
+.modal-close:hover {
+  opacity: 1;
+}
+
+.modal-close:focus {
+  opacity: 0.1;
 }
 
 .login-form input {

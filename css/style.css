@@ -1067,6 +1067,10 @@ img {
   opacity: 1;
 }
 
+.content-item-checkbox:disabled: + label::before {
+  opacity: 0.3;
+}
+
 .content-item-checkbox:checked + label::after {
   content: "";
   position: absolute;
@@ -1081,6 +1085,10 @@ img {
 
 .content-item-checkbox:checked + label:hover::after {
   opacity: 1;
+}
+
+.content-item-checkbox:checked:disabled + label::after {
+  opacity: 0.3;
 }
 
 .filter-button {
@@ -1233,7 +1241,7 @@ img {
   position: absolute;
   min-width: 359px;
   background-color: var(--gray-background);
-  bottom: 12px; /* bottom */
+  bottom: 0;
   max-height: 75%;
   overflow-y: auto;
 }
@@ -1244,7 +1252,7 @@ img {
   font-size: 18px;
   line-height: 30px;
   padding-top: 28px;
-  margin-bottom: 11px;
+  margin-bottom: 5px;
   display: flex;
   justify-content: center;
 }
@@ -1264,8 +1272,9 @@ img {
   color: var(--gray-contacts);
   max-width: 255px;
   min-height: 35px;
-  padding: 0;
+  padding: 10px 3px 0 0;
   margin: 0 auto;
+  margin-bottom: 2px;
   text-align: center;
   vertical-align: center;
 }
@@ -1274,7 +1283,7 @@ img {
   display: inline-block;
   vertical-align: middle;
   padding: 17px 74px 15px 70px;
-  margin: 31px 0 36px 80px;
+  margin: 31px 0 46px 80px;
   background-color: var(--red-light);
 }
 

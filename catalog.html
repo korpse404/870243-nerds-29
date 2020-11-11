@@ -46,8 +46,8 @@
                     <div class="scale">
                       <div class="bar"></div>
                     </div>
-                    <div class="toggle toggle-min" tabindex="0"></div>
-                    <div class="toggle toggle-max" tabindex="0"></div>
+                    <div class="toggle toggle-min" tabindex="0" aria-label=minimumprice></div>
+                    <div class="toggle toggle-max" tabindex="0" aria-label=maximumprice></div>
                   </div>
                   <div class="price-controls">
                     <label class="min-price"> от <input type="number" name="min-price" value="0">
@@ -101,7 +101,7 @@
                 </li>
               </ul>
             </fieldset>
-            <a class="filter-button button" href="blank.html">Показать</a>
+            <button class="filter-button button" type="submit">Показать</button>
           </form>
         </section>
 
@@ -112,6 +112,10 @@
               <li class="filter-item"><a class="filter-option current">По цене</a></li>
               <li class="filter-item"><a class="filter-option" href="#">По типу</a></li>
               <li class="filter-item"><a class="filter-option" href="#">По названию</a></li>
+              <li class="up-down">
+                <a class="down-button" href="#"></a>
+                <a class="up-button" href="#"></a>
+              </li>
             </ul>
         </section>
 
@@ -119,60 +123,60 @@
           <h2 class="visually-hidden">Каталог сайтов</h2>
           <ul class="catalog-list">
             <li class="catalog-item">
-              <article class="catalog-card">
+              <article class="catalog-card sedona">
                 <img src="img/catalog-sedona.png" alt="Изображение сайта Sedona" width="360" height="576">
-                <div class="product-card-popup popup-sedona">
-                  <h3 class="popup-title">Sedona</h3>
+                <div class="product-card-popup">
+                  <a class="popup-title" href="#">Sedona</a>
                   <p class="popup-text">Информационный сайт<br> для туристов</p>
                   <a class="button red popup-button" href="#">9 900 ₽</a>
                 </div>
               </article>
             </li>
             <li class="catalog-item">
-              <article class="catalog-card">
+              <article class="catalog-card pinkapp">
                 <img src="img/catalog-pink.png" alt="Изображение сайта Pink App" width="358" height="578">
-                <div class="product-card-popup popup-pink">
-                  <h3 class="popup-title">Pink App</h3>
+                <div class="product-card-popup">
+                  <a class="popup-title" href="#">Pink App</a>
                   <p class="popup-text">Продуктовый лендинг приложения для iOS и Android</p>
                   <a class="button red popup-button" href="#">9 900 ₽</a>
                 </div>
               </article>
             </li>
             <li class="catalog-item">
-              <article class="catalog-card">
+              <article class="catalog-card barbershop">
                 <img src="img/catalog-barbershop.png" alt="Изображение сайта Barbershop" width="364" height="582">
-                <div class="product-card-popup popup-barbershop">
-                  <h3 class="popup-title">Barbershop</h3>
+                <div class="product-card-popup">
+                  <a class="popup-title" href="#">Barbershop</a>
                   <p class="popup-text">Сайт салона красоты. Для мужчин, да.</p>
                   <a class="button red popup-button" href="#">9 900 ₽</a>
                 </div>
               </article>
             </li>
             <li class="catalog-item">
-              <article class="catalog-card">
+              <article class="catalog-card mishka-mag">
                 <img src="img/catalog-mishka.png" alt="Изображение сайта MISHKA" width="362" height="580">
-                <div class="product-card-popup popup-mishka">
-                  <h3 class="popup-title">MISHKA</h3>
+                <div class="product-card-popup">
+                  <a class="popup-title" href="#">MISHKA</a>
                   <p class="popup-text">Интернет-магазин вязаных игрушек</p>
                   <a class="button red popup-button" href="#">9 900 ₽</a>
                 </div>
               </article>
             </li>
             <li class="catalog-item">
-              <article class="catalog-card">
+              <article class="catalog-card aplus">
                 <img src="img/catalog-aplus.png" alt="Изображение сайта A Plus" width="364" height="582">
-                <div class="product-card-popup popup-aplus">
-                  <h3 class="popup-title">A Plus</h3>
+                <div class="product-card-popup">
+                  <a class="popup-title" href="#">A Plus</a>
                   <p class="popup-text">Лендинг курсов повышения квалификации</p>
                   <a class="button red popup-button" href="#">9 900 ₽</a>
                 </div>
               </article>
             </li>
             <li class="catalog-item">
-              <article class="catalog-card">
+              <article class="catalog-card kvast">
                 <img src="img/catalog-kvast.png" alt="Изображение сайта КВАСТ" width="362" height="580">
-                <div class="product-card-popup popup-kvast">
-                  <h3 class="popup-title">КВАСТ</h3>
+                <div class="product-card-popup">
+                  <a class="popup-title" href="#">КВАСТ</a>
                   <p class="popup-text">Промо-сайт производителя крафтового кваса</p>
                   <a class="button red popup-button" href="#">9 900 ₽</a>
                 </div>
@@ -193,34 +197,40 @@
     </main>
 
     <footer class="page-footer main-footer">
-        <section class="footer-contacts">
-          <h2 class="visually-hidden">Как нас найти</h2>
-          <img class="map" src="img/footer-map-1200.jpg" alt="Карта, как нас найти" width="1440" height="416">
-          <div class="container">
-            <img class="map-marker" src="img/footer-map-marker.png" alt="Маркер - местонахождение на карте" width="231" height="190">
-            <div class="contacts-block">
-              <p>NЁRDS DESIGN STUDIO</p>
-              <address class="footer-adress">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</address>
-                <a class="footer-phone" href="tel:+78122757575">тел. +7 (812) 275-75-75</a>
-                <a class="button red" href="blank.html">Напишите нам</a>
+      <section class="footer-contacts">
+        <h2 class="visually-hidden">Как нас найти</h2>
+        <img class="map" src="img/footer-map-1200.jpg" alt="Карта, как нас найти" width="1440" height="416">
+        <div class="container">
+          <img class="map-marker" src="img/footer-map-marker.png" alt="Маркер - местонахождение на карте" width="231" height="190">
+          <div class="contacts-block">
+            <p>NЁRDS DESIGN STUDIO</p>
+            <address class="footer-adress">191186, Санкт-Петербург,<br> ул. Б. Конюшенная, д. 19/8</address>
+            <a class="footer-phone" href="tel:+78122757575">тел. +7 (812) 275-75-75</a>
+            <a class="button red" href="blank.html">Напишите нам</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="social">
+        <h2 class="visually-hidden">Мы в социальных сетях</h2>
+          <div class="social-wrap">
+            <ul class="social-list">
+              <li class="social-item vk">
+                <a class="button" href="#" aria-label="vkontakte"></a>
+              </li>
+              <li class="social-item fb">
+                <a class="button" href="#" aria-label="facebook"></a>
+              </li>
+              <li class="social-item inst">
+                <a class="button" href="#" aria-label="instagram"></a>
+              </li>
+            </ul>
+            <div class="footer-right">
+              <p class="footer-title">Давайте дружить, это выгодно!</p>
+              <p class="footer-text">Скидка 10% для друзей из социальных сетей.</p>
             </div>
           </div>
-        </section>
-
-          <section class="social">
-            <h2 class="visually-hidden">Мы в социальных сетях</h2>
-              <div class="social-wrap">
-                <ul class="social-list">
-                  <li class="social-item vk"><a class="button" href="#" ></a></li>
-                  <li class="social-item fb"><a class="button" href="#" ></a></li>
-                  <li class="social-item inst"><a class="button" href="#" ></a></li>
-                </ul>
-                <div class="footer-right">
-                  <p class="footer-title">Давайте дружить, это выгодно!</p>
-                  <p class="footer-text">Скидка 10% для друзей из социальных сетей.</p>
-                </div>
-              </div>
-          </section>
+      </section>
     </footer>
 
   </body>
